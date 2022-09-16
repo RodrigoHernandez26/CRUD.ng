@@ -4,6 +4,7 @@ import { Component, ChangeDetectorRef } from '@angular/core';
 import { GlobalVariablesService } from './services/global-variables.service';
 
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ export class AppComponent {
     private cdr: ChangeDetectorRef,
   ) {
     console.log(`[${this.title}#constructor]`);
+    console.log(environment.apiKey)
 
     const lastPage = this.GVS.getVar('last_page');
     console.log(console.log(`[${this.title}#constructor] lastPage`, lastPage));

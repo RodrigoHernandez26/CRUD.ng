@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: process.env['API_KEY'],
+  projectId: process.env['PROJECT_ID'],
+  storageBucket: process.env['STORAGE_BUCKET'],
+  apmessagingSenderIdiKey: process.env['AP_MESSAGING_SENDER_ID_KEY'],
+  appId: process.env['APP_ID'],
+  measurementId: process.env['MEASUREMENT_ID'],
 };
 
 /*

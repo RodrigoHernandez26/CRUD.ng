@@ -8,4 +8,6 @@ npm i eslint@8.23.0
 npm i angular-cli-ghpages@1.0.3
 npm i firebase@9.9.4
 
+npm i --save-dev @types/node
+
 echo $TITLE 'finished.'
